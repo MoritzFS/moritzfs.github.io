@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moritzfs.github.io</title>
+<link rel="icon" href="data:,">
+<style>
+    body {
+        margin: 0;
+        padding: 48px 24px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+        background: #fff;
+    }
+    a { color: #000; }
+    .tree, .tree ul { list-style: none; margin: 0; padding: 0; }
+    .tree ul { margin-left: 8px; }
+    .tree li { position: relative; padding-left: 22px; }
+    /* branch lines */
+    .tree li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-left: 1px solid #000;
+    }
+    .tree li:last-child::before { height: 0.8em; }
+    .tree li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.8em;
+        width: 14px;
+        border-top: 1px solid #000;
+    }
+    .title { color: #777; }
+</style>
+</head>
+<body>
+<div>moritzfs.github.io</div>
+<ul class="tree">
+    <li><a href="Physics-III-teaching-applets/">Physics-III-teaching-applets/</a> <span class="title">Physics III applets</span>
+        <ul>
+            <li><a href="Physics-III-teaching-applets/optics-bench/">optics-bench/</a> <span class="title">Optics Bench</span></li>
+        </ul>
+    </li>
+    <li><a href="tikz-studio/">tikz-studio/</a> <span class="title">TikZ Studio</span></li>
+    <li><a href="visit-our-trapped-ion/">visit-our-trapped-ion/</a> <span class="title">Inside the Trap</span></li>
+</ul>
+</body>
+</html>
